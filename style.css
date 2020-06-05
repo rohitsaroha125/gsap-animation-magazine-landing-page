@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #D8DBE2;
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+}
+
+ul{
+    list-style:none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height:80px;
+    align-items: center;
+}
+
+.navbar > div {
+    padding:0 30px;
+    font-size:20px;
+    height:40px;
+    overflow: hidden;
+}
+
+.navbar menu{
+    margin-right:auto; 
+}
+
+.navbar .lang{
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.media ul{
+    position: absolute;
+    bottom: 47.5%;
+    left:-155px;
+    transform: rotate(-90deg);
+}
+
+.media ul li{
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding:0 30px;
+}
+
+.text{
+    position: absolute;
+    left:15%;
+}
+
+.text h1{
+    font-size: 120px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0px;;
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    width:1200px;
+}
+
+.text h1 .hidetext{
+    position: absolute;
+    z-index:9999;
+}
+
+.text h2{
+    position: relative;
+    top:-120px;
+    left:-80px;
+    color:#EFDE74;
+    z-index: -1;
+    font-size:150px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.text h3 .hidetext{
+    position: absolute;
+}
+
+.text h3{
+    top:-200px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight:600;
+    line-height: 1;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.text p{
+    width:200px;
+    font-size:12px;
+    margin-top:-170px;
+    font-weight:500;
+    position: relative;
+    height:180px;
+    width:300px;
+    overflow: hidden;
+}
+
+.text p .hidetext{
+    position: absolute;
+}
+
+.sponsor img{
+    width:120px;
+    height:auto;
+    overflow: hidden;
+}
+
+.sponsor{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    text-align: center;
+}
+
+.sponsor p{
+    margin-top: 10px;
+    font-size:12px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.distortion{
+    width:580px;
+    height:720px;
+    position: absolute;
+    right:300px;
+    bottom:0px;
+}
+
+.overlay{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top:0px;
+    z-index:999999;
+}
+
+.first{
+    background:#efde74;
+    width:33.33%;
+}
+.second{
+    background:#efde74;
+    left:33.33%;
+    width:33.33%;
+}
+.third{
+    background: #efde74;
+    left:66.66%;
+    width:33.33%;
+}
+
+@media screen and (max-width:767px)
+{
+    .text h1{
+        font-size:42px;
+    }
+    .text h2{
+        font-size: 48px;
+        top:-140px;
+        left:-20px;
+    }
+    .text h3{
+        top:-135px;
+        font-size:24px;
+    }
+    .text p{
+        margin-top:-155px;
+    }
+    .distortion{
+        right:0px;
+        left:15%;
+        height:250px;
+        width:200px;
+    }
+    .sponsor img{
+        width:80px;
+        height:auto;
+    }
+    .navbar{
+        height:60px;
+    }
+    .navbar > div{
+        padding:0 15px;
+    }
+    .media ul{
+        left:-170px;
+    }
+}
